@@ -17,11 +17,20 @@ The construction of this project will be divided into different phases.
 | DictionaryMenu  | Build a menu by loading options from a dictionary. |
 | MethodMenu      | Build a menu by separating the code into methods.  |
 
+Here is a diagram of the menu options:
+
+```mermaid
+graph LR;
+    MainMenu --> SingleMenu;
+    MainMenu --> DictionaryMenu;
+    MainMenu --> MethodMenu;
+```
+
 **Phase 2.** Added the ability to load menu options from a file; each menu option in the main menu will load a file with different structures, and two additional options are also added.
 
 * Option to add a menu by uploading an XML file.
 * Option to add a menu by uploading a JSON file.
 
-**Phase 3.** Interfaces and structures will be added to apply some Design Pattern applicable to this project.
+**Phase 3.** Interfaces and structures will be added to apply some Design Patterns applicable to this project.
 
 **Phase 4.** The main menu options will be decoupled, and the project will be modified to dynamically load the different menu options by searching for DLLs that implement a specific interface.
