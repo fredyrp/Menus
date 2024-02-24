@@ -10,11 +10,12 @@ The construction of this project will be divided into different phases.
 
 **Phase 1.** A main menu will be created with three options; basic code with hardcode strings will be used, and we will divide it into different projects.
 
-| Project        | Description                                        |
-|----------------|----------------------------------------------------|
-| MainMenu       | This is the main project of the solution.          |
-| SingleMenu     | Build a simple menu.                               |
-| DictionaryMenu | Build a menu by loading options from a dictionary. |
+| Project         | Description                                        |
+|-----------------|----------------------------------------------------|
+| MainMenu        | This is the main project of the solution.          |
+| SingleMenu      | Build a simple menu.                               |
+| DictionaryMenu  | Build a menu by loading options from a dictionary. |
+| MethodMenu      | Build a menu by separating the code into methods.  |
 
 **Phase 2.** Added the ability to load menu options from a file; each menu option in the main menu will load a file with different structures, and two additional options are also added.
 
