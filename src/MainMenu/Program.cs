@@ -1,6 +1,7 @@
 ﻿using System;
 using SingleMenu;
 using DictionaryMenu;
+using MethodMenu;
 
 namespace MainMenu
 {
@@ -33,7 +34,7 @@ namespace MainMenu
                         new MenuDictionary().RunMenu();
                         break;
                     case '3':
-                        //SingleFunctionsMenu.MainMenu();
+                        new MenuMethod().RunMenu();
                         break;
                     case 'x':
                         break;

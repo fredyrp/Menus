@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SingleMenu\SingleMenu.csproj" />
     <ProjectReference Include="..\DictionaryMenu\DictionaryMenu.csproj" />
+    <ProjectReference Include="..\MethodMenu\MethodMenu.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
