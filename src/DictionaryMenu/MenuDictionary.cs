@@ -19,7 +19,7 @@ public class MenuDictionary
         {
             Console.Clear();
             Console.WriteLine("------------------------------------------");
-            Console.WriteLine("--  Welcome to the Dictionary Console Menu  --");
+            Console.WriteLine("--    Welcome to the Dictionary Menu    --");
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("  Select an option:");
 
