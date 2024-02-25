@@ -2,7 +2,17 @@
 
 Project with a console application that creates menus in different ways.
 
-> **Note:** This application is a test to learn how to locate the elements of the VSCode development environment. I will also be practising documenting projects with Markdown and possibly using actions in Git Hub.
+> [!NOTE] 
+> This application is a test to learn how to locate the elements of the VSCode development environment. I will also be practising documenting projects with Markdown and possibly using actions in Git Hub.
+
+## Table of content
+
+1. [Phases of projects](#phases-of-project)
+    - [Phase I](#pase-i)
+    - [Phase II](#pase-ii)
+    - [Phase III](#pase-iii)
+    - [Phase IV](#phaseiv)
+
 
 ## Phases of project
 
@@ -21,6 +31,8 @@ A main menu will be created with three options; basic code with hardcode strings
 
 Here is a diagram of the menu options:
 
+<details>
+<summary>Calls between menus</summary>
 ```mermaid
 ---
 title: Calls between menus
@@ -30,7 +42,10 @@ graph LR;
     MainMenu --> DictionaryMenu;
     MainMenu --> MethodMenu;
 ```
+</details>
 
+<details>
+<summary>Sequence diagram.</summary>
 ```mermaid
 sequenceDiagram;
     participant Main as MainMenu;
@@ -68,6 +83,7 @@ sequenceDiagram;
     Method-->>Main: Exit;
     deactivate Method;
 ```
+</details>
 
 ### Phase II
 
