@@ -1,5 +1,7 @@
 ﻿using System;
 using SingleMenu;
+using DictionaryMenu;
+using MethodMenu;
 
 namespace MainMenu
 {
@@ -8,16 +10,16 @@ namespace MainMenu
         static void Main(string[] args)
         {
             char key = ' ';
-            while (key != 'x')
+            do
             {
                 Console.Clear();
                 Console.WriteLine("------------------------------------------");
                 Console.WriteLine("--       Welcome to the Main Menu       --");
                 Console.WriteLine("------------------------------------------");
                 Console.WriteLine("Select an menu:");
-                Console.WriteLine("\t1. Single Menu");
-                Console.WriteLine("\t2. Single Array Menu");
-                Console.WriteLine("\t3. Single Functions Menu");
+                Console.WriteLine("\t1. Simple menu");
+                Console.WriteLine("\t2. Menu using a dictionary.");
+                Console.WriteLine("\t3. Menu split into methods.");
                 Console.WriteLine("\tx. To exit");
                 Console.Write("Option: ");
                 key = Console.ReadKey().KeyChar;
@@ -29,10 +31,10 @@ namespace MainMenu
                         new MenuSingle().RunMenu();
                         break;
                     case '2':
-                        //SingleArrayMenu.MainMenu();
+                        new MenuDictionary().RunMenu();
                         break;
                     case '3':
-                        //SingleFunctionsMenu.MainMenu();
+                        new MenuMethod().RunMenu();
                         break;
                     case 'x':
                         break;
@@ -42,7 +44,7 @@ namespace MainMenu
                         Console.ReadKey();
                         break;
                 }
-            }
+            } while (key != 'x');
         }
     }
 }

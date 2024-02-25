@@ -5,7 +5,7 @@ namespace SingleMenu
         public void RunMenu()
         {
             char key = ' ';
-            while (key != 'x')
+            do
             {
                 Console.Clear();
                 Console.WriteLine("------------------------------------------");
@@ -35,7 +35,7 @@ namespace SingleMenu
                 Console.WriteLine(message);
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
-            }
+            } while (key != 'x');
         }
     }
 }
