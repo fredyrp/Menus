@@ -31,8 +31,6 @@ A main menu will be created with three options; basic code with hardcode strings
 
 Here is a diagram of the menu options:
 
-<details>
-<summary>Calls between menus</summary>
 ```mermaid
 ---
 title: Calls between menus
@@ -42,10 +40,7 @@ graph LR;
     MainMenu --> DictionaryMenu;
     MainMenu --> MethodMenu;
 ```
-</details>
 
-<details>
-<summary>Sequence diagram.</summary>
 ```mermaid
 sequenceDiagram;
     participant Main as MainMenu;
@@ -83,7 +78,6 @@ sequenceDiagram;
     Method-->>Main: Exit;
     deactivate Method;
 ```
-</details>
 
 ### Phase II
 
