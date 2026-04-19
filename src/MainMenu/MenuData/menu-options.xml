@@ -1,0 +1,6 @@
+<menu>
+  <option key="1" value="XML option 1" />
+  <option key="2" value="XML option 2" />
+  <option key="3" value="XML option 3" />
+  <option key="x" value="To exit" />
+</menu>

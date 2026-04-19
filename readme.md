@@ -7,11 +7,13 @@ Project with a console application that creates menus in different ways.
 
 ## Table of content
 
-1. [Phases of projects](#phases-of-project)
-    - [Phase I](#pase-i)
-    - [Phase II](#pase-ii)
-    - [Phase III](#pase-iii)
-    - [Phase IV](#phaseiv)
+- [Test Menus](#test-menus)
+  - [Table of content](#table-of-content)
+  - [Phases of project](#phases-of-project)
+    - [Pase I](#pase-i)
+    - [Phase II](#phase-ii)
+    - [Phase III](#phase-iii)
+    - [Phase IV](#phase-iv)
 
 
 ## Phases of project
@@ -81,10 +83,15 @@ sequenceDiagram;
 
 ### Phase II
 
-Added the ability to load menu options from a file; each menu option in the main menu will load a file with different structures, and two additional options are also added.
+Added the ability to load menu options from files. Each existing option in the main menu now loads data from a different file structure, and two additional options were added.
 
-* Option to add a menu by uploading an XML file.
-* Option to add a menu by uploading a JSON file.
+* Option 1 reads a `:` separated file.
+* Option 2 reads a `=` separated file.
+* Option 3 reads a `,` separated file.
+* Option 4 loads a menu from an XML file path entered by the user.
+* Option 5 loads a menu from a JSON file path entered by the user.
+
+Sample files are available in `src/MainMenu/MenuData` and copied automatically to output at build time.
 
 ### Phase III
 

@@ -1,0 +1,5 @@
+1: Option 1 from TXT
+2: Option 2 from TXT
+3: Option 3 from TXT
+4: Option 4 from TXT
+x: To exit

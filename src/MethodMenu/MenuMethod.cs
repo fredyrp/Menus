@@ -1,15 +1,34 @@
 ﻿namespace MethodMenu;
 public class MenuMethod
 {
-    private Dictionary<string, string> _dictionary = new Dictionary<string, string>();
+    private readonly Dictionary<string, string> _dictionary = new Dictionary<string, string>();
 
     public MenuMethod()
+        : this(null)
     {
-        _dictionary.Add("1", "Option 1");
-        _dictionary.Add("2", "Option 2");
-        _dictionary.Add("3", "Option 3");
-        _dictionary.Add("4", "Option 4");
-        _dictionary.Add("x", "To exit");
+    }
+
+    public MenuMethod(Dictionary<string, string>? options)
+    {
+        if (options is null)
+        {
+            _dictionary.Add("1", "Option 1");
+            _dictionary.Add("2", "Option 2");
+            _dictionary.Add("3", "Option 3");
+            _dictionary.Add("4", "Option 4");
+            _dictionary.Add("x", "To exit");
+            return;
+        }
+
+        foreach (var option in options)
+        {
+            _dictionary[option.Key] = option.Value;
+        }
+
+        if (!_dictionary.ContainsKey("x"))
+        {
+            _dictionary["x"] = "To exit";
+        }
     }
 
     public void RunMenu()

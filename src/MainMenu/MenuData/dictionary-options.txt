@@ -1,0 +1,5 @@
+1=Dictionary option A
+2=Dictionary option B
+3=Dictionary option C
+4=Dictionary option D
+x=To exit
